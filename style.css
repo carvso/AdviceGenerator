@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Manrope:wght@200;400;800&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap');
+
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+html{
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: var(--DarkBlue);
+}
+.container{
+    width: 27rem;
+    height: 14rem;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.advice-number{
+    display: flex;
+    position: absolute;
+    top: 1em;
+}
+.advice-number > p{
+    color: var(--NeonGreen);
+    font-weight: 800;
+    font-size: .7rem;
+    letter-spacing: .2em;
+}
+.advice-txt{
+    text-align: center;
+}
+.advice-txt > h3{
+    color: var(--LightCyan);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.txt-button-divisor{
+    position: absolute;
+    bottom: 3em;
+}
+.action-btn{
+    position: absolute;
+    bottom: -.7em;
+    cursor: pointer;
+}
+.action-btn .btn{
+    background-color: var(--NeonGreen);
+    padding: 1em 1em;
+    border-radius: 50%;
+}
+.btn > svg{
+    position: relative;
+    top: .3em;
+    width: fit-content;
+}
+.btn:hover{
+    box-shadow: 0 0 40px var(--NeonGreen);
+}
+.attribution > a{
+    color: var(--NeonGreen);
+    text-decoration: none;
+}
+.attribution{
+    font-weight: 600;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+    top: 50em; 
+    color: var(--LightCyan);
+}
+@media screen and (max-width:480px){
+    .container{
+        width: 15rem;
+        top: 25%;
+    }
+    .advice-number{
+        position: absolute;
+        top: 1em;
+    }
+    .txt-button-divisor{
+        display: none;
+    }
+    .attribution{
+        top: 40em;
+    }
+}
