@@ -13,6 +13,7 @@ html{
 body{
     background-color: var(--DarkBlue);
     background-image: url(adviceGenBG.png);
+    background-size: cover;
 }
 .container{
     width: 27rem;
